@@ -12,10 +12,10 @@ class BookmarkSerializer(serializers.ModelSerializer):
     """
 
     #임시코드 4줄
-    owner = serializers.SlugRelatedField(
-        slug_field='username',
-        queryset=User.objects.all()
-    )
+    # owner = serializers.SlugRelatedField(
+    #     slug_field='username',
+    #     queryset=User.objects.all()
+    # )
 
     # ===== Meta 클래스로 필드 자동 생성 =====
     # 기존 7줄 → 4줄로 감소!
